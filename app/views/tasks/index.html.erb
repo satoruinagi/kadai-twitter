@@ -25,14 +25,6 @@
     </div>
   
 
-<%= link_to 'タスクを作成する', new_task_path, class: "btn btn-primary" %>
+  <%= link_to 'タスクを作成する', new_task_path, class: "btn btn-primary" %>
   
-  <%= render 'tasks/tasks', tasks: @tasks %>
-<% else %>
-  <div class="center jumbotron">
-    <div class="text-center">
-      <h1>Tasklist</h1>
-      <%= link_to 'Sign up now!', signup_path, class: 'btn btn-lg btn-primary' %>
-    </div>
-  </div>
 <% end %>
